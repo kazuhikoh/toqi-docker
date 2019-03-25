@@ -1,3 +1,6 @@
 FROM alpine:3.4
 
-RUN apk --update git
+
+COPY .crontab /var/spool/cron/crontabs/root
+
+CMD crond -f
