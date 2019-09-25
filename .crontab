@@ -1,2 +1,2 @@
 # m h dom mon dow command
-* * * * * date >> /var/tmp/piyo
+* * * * * for i in $(seq 5 15 59); do (sleep $i; /usr/bin/cron/sorapiyo-notify.sh) & done

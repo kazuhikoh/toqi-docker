@@ -1,0 +1,4 @@
+#!/bin/bash
+
+readonly CONFIG=/toqi/config.json
+cat $CONFIG | jq -r ".$1"
