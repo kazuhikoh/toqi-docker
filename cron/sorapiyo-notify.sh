@@ -32,9 +32,11 @@ to_json() {
 {
   "channel": "${channel}",
   "username": "そらぴよ⊂(＾ω＾)⊃",
-  "text": "${messages}\n<http://piyo.fc2.com${url}|${time}>",
+  "text": "${messages}\n${time}\n\nhttp://piyo.fc2.com${url}",
   "attachments": [
-    ${images}
+    {
+      "image_url": "${images}"
+    }
   ]
 }
 EOF
